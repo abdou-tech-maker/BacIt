@@ -64,7 +64,7 @@ class _LoginState extends State<Login> {
     return Scaffold(
         appBar: AppBar(
           foregroundColor: Colors.blueAccent,
-          backgroundColor: Colors.bluee[900],
+          backgroundColor: Colors.blue[900],
           title: Text(
             ' Login : ',
             style: GoogleFonts.pacifico(textStyle: style),
