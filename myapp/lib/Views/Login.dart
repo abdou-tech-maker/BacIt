@@ -19,11 +19,12 @@ class _LoginState extends State<Login> {
   TextEditingController passwordController = TextEditingController();
 
   Future login() async {
-    var response = await http
-        .post(Uri.http('10.0.3.119', '/chabchoub/index.php/user/login'), body: {
-      'BacId': bacidController.text,
-      'pass': passwordController.text,
-    });
+    var response = await http.post(
+        Uri.http('192.168.1.40', '/chabchoub/index.php/user/login'),
+        body: {
+          'BacId': bacidController.text,
+          'pass': passwordController.text,
+        });
     setState(() {
       print(response.body);
       msg = int.parse(response.body);

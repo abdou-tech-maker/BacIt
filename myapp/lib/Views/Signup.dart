@@ -36,7 +36,7 @@ class _SignupState extends State<Signup> {
           fontSize: 16.0);
     } else {
       var response = await http
-          .post(Uri.http('10.0.3.119', '/Apriori_app/signup.php'), body: {
+          .post(Uri.http('192.168.1.40', '/Apriori_app/signup.php'), body: {
         "BacId": bacidctl.text,
         "D_Bac": dbacctl.text,
         "Namee": nameectl.text,
